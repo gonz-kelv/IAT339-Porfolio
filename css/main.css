@@ -1,0 +1,70 @@
+/*
+  HTML Elements
+*/
+
+html,body{
+	height:100%;
+	background-color:  #FFF;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+}
+
+#NavButton1{
+	background-color: #8E001C;
+	padding:1%;
+}
+
+#NavButton2{
+	background-color: #8E001C;
+	padding:1%;
+}
+
+#NavButton3{
+	background-color: #8E001C;
+	padding:1%;
+}
+
+#NavButton4{
+	background-color: #8E001C;
+	padding:1%;
+}
+
+.Nav.Top{
+	width:100%;
+	display:block;
+	margin-top:30%;
+	text-align:center;
+	position:fixed;
+}
+
+.Nav.Left{
+	width:20%;
+	float:left;
+	display:block;
+	margin-left:30%;
+	margin-top:35%;
+	text-align:center;
+	position:fixed;
+}
+
+.Nav.Right{
+	width:20%;
+	float:right;	
+	display:block;
+	margin-right:30%;
+	margin-left:50%;
+	margin-top:35%;
+	text-align:center;
+	position:fixed;
+}
+
+.Nav.Bottom{
+	width:100%;
+	display:block;
+	height:10%;
+	margin-top:40%;
+	text-align:center;
+	position:fixed;
+}
