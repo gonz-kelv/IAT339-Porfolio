@@ -2,7 +2,11 @@
   HTML Elements
 */
 
-html,body{
+html{
+	height:100%;
+}
+
+body{
 	height:100%;
 	background-color:  #FFF;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -36,7 +40,6 @@ html,body{
 	display:block;
 	margin-top:30%;
 	text-align:center;
-	position:fixed;
 }
 
 .Nav.Left{
@@ -44,27 +47,21 @@ html,body{
 	float:left;
 	display:block;
 	margin-left:30%;
-	margin-top:35%;
 	text-align:center;
-	position:fixed;
 }
 
 .Nav.Right{
 	width:20%;
-	float:right;	
+	float:left;	
 	display:block;
 	margin-right:30%;
-	margin-left:50%;
-	margin-top:35%;
 	text-align:center;
-	position:fixed;
 }
 
 .Nav.Bottom{
 	width:100%;
 	display:block;
 	height:10%;
-	margin-top:40%;
+	margin-bottom:30%;
 	text-align:center;
-	position:fixed;
 }
