@@ -16,8 +16,38 @@ $(document).ready( function() {
 		console.log('clicking');
 		
 		$('.Nav.Top').animate({
+			'margin-top':'1%'
+		}, 1000);
+		
+		$('.Nav.Left').animate({
+			'margin-left':0,
+			'left':0
+		}, 1000);
+		
+		$('.Nav.Right').animate({
+			'margin-right':0,
+			'right':0
+		}, 1000);
+		
+		$('.Nav.Bottom').animate({
+			'margin-top': '48%'
+		},1000);
+		
+		$('.Content-Me').show().animate({
+			'padding-top':'20%'
+		},1000);
+		
+		$('.Content-Resume').hide().attr('style','');
+		$('.Content-Work').hide().attr('style','');
+		$('.Content-Contact').hide().attr('style','');
+		
+	});
+	
+	$('.Nav.Left').on('click', function(){
+		
+		$('.Nav.Top').animate({
 			'margin-top':'1%',
-			'margin-bottom':'29%',
+			'margin-bottom':'20%',
 			'top': 0
 		}, 1000);
 		
@@ -32,29 +62,83 @@ $(document).ready( function() {
 		}, 1000);
 		
 		$('.Nav.Bottom').animate({
-			'bottom':0,
-			'margin-bottom':0,
-			'margin-top': '60%'		
-		},1000).attr('position', 'fixed');
-		
-		$('.Content-Me').show().animate({
-			'padding-top': '30%',
-			'padding-bottom': '10%' 
+			'margin-top': '48%'
 		},1000);
 		
+		$('.Content-Resume').show().animate({
+			'padding-left':0
+		},1000);
+		
+		$('.Content-Me').hide().attr('style','');
+		$('.Content-Work').hide().attr('style','');
+		$('.Content-Contact').hide().attr('style','');
+	
 	});
 	
-	$('.Nav.Left').on('click', function(){
+	$('.Nav.Right').on('click', function(){
 		
-		$('.Content-Me').show().animate({
-			'padding-top': 0,
-			'margin-left': '60%' 
-		},1000).fadeOut(1000);
+		$('.Nav.Top').animate({
+			'margin-top':'1%',
+			'margin-bottom':'20%',
+			'top': 0
+		}, 1000);
 		
-		$('.Content-Resume').show().animate({
-			'width': '100%',
-			'margin-top': '30%'
-		},2000);
+		$('.Nav.Left').animate({
+			'margin-left':0,
+			'left':0
+		}, 1000);
+		
+		$('.Nav.Right').animate({
+			'margin-right':0,
+			'right':0
+		}, 1000);
+		
+		$('.Nav.Bottom').animate({
+			'margin-top': '48%'
+		},1000);
+		
+		$('#NavButton4').attr('position', 'fixed');
+		
+		$('.Content-Work').show().animate({
+			'width':'100%'
+		},1000);
+		
+		$('.Content-Me').hide().attr('style','');
+		$('.Content-Resume').hide().attr('style','');
+		$('.Content-Contact').hide().attr('style','');
+	
+	});
+	
+	$('.Nav.Bottom').on('click', function(){
+		
+		$('.Nav.Top').animate({
+			'margin-top':'1%',
+			'margin-bottom':'20%',
+			'top': 0
+		}, 1000);
+		
+		$('.Nav.Left').animate({
+			'margin-left':0,
+			'left':0
+		}, 1000);
+		
+		$('.Nav.Right').animate({
+			'margin-right':0,
+			'right':0
+		}, 1000);
+		
+		$('.Nav.Bottom').animate({
+			'margin-top': '48%'
+		},1000);
+		
+		$('.Content-Contact').show().animate({
+			'margin-top':'20%'
+		},1000);
+		
+		$('.Content-Me').hide().attr('style','');
+		$('.Content-Work').hide().attr('style','');
+		$('.Content-Resume').hide().attr('style','');
+		
 	});
 	
 });
