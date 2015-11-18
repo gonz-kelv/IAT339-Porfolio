@@ -9,6 +9,8 @@ $(document).ready( function() {
 	// $('.Content-Work').hide();
 	// $('.Content-Contact').hide();
 	
+	$('.Color-Bleed').fadeOut('slow');
+	
 	$('.Nav.Top').on('click', function(){
 		navOn  = true;
 		console.log('clicking');
@@ -35,24 +37,24 @@ $(document).ready( function() {
 			'margin-top': '60%'		
 		},1000).attr('position', 'fixed');
 		
-		// $('.Content-Me').show().animate({
-		// 	'padding-top': '30%',
-		// 	'padding-bottom': '10%' 
-		// },1000);
+		$('.Content-Me').show().animate({
+			'padding-top': '30%',
+			'padding-bottom': '10%' 
+		},1000);
 		
 	});
 	
 	$('.Nav.Left').on('click', function(){
 		
-		// $('.Content-Me').show().animate({
-		// 	'padding-top': 0,
-		// 	'margin-left': '60%' 
-		// },1000).attr('position', 'absolute');
+		$('.Content-Me').show().animate({
+			'padding-top': 0,
+			'margin-left': '60%' 
+		},1000).fadeOut(1000);
 		
-		// $('.Content-Resume').show().animate({
-		// 	'padding-top': '30%',
-		// 	'padding-bottom': '10%' 
-		// },1000);
+		$('.Content-Resume').show().animate({
+			'width': '100%',
+			'margin-top': '30%'
+		},2000);
 	});
 	
 });
