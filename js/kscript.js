@@ -1,4 +1,4 @@
-var navOn = false;
+
 
 $(document).ready( function() {
 	//console.log("yes");
@@ -12,9 +12,8 @@ $(document).ready( function() {
 	$('.Color-Bleed').fadeOut('slow');
 	
 	$('.Nav.Top').on('click', function(){
-		navOn  = true;
-		console.log('clicking');
 		
+		// Animate the navigation to the side 		
 		$('.Nav.Top').animate({
 			'margin-top':'1%'
 		}, 1000);
@@ -33,10 +32,12 @@ $(document).ready( function() {
 			'margin-top': '48%'
 		},1000);
 		
+		// Show the right content depending on what Navigation button was clicked
 		$('.Content-Me').show().animate({
-			'padding-top':'20%'
+			'padding-top':'15%'
 		},1000);
 		
+		// Hide the content not needed
 		$('.Content-Resume').hide().attr('style','');
 		$('.Content-Work').hide().attr('style','');
 		$('.Content-Contact').hide().attr('style','');

@@ -42,7 +42,17 @@ body{
 	
 }
 
-/* Navigation */
+/*
+	Styling
+*/
+
+.Red{
+	color: #8E001C;
+}
+
+/* 
+	Navigation 
+*/
 
 #NavButton1{
 	background-color: #8E001C;
@@ -106,7 +116,9 @@ body{
 	position:fixed;
 }
 
-/* Contents */
+/* 
+	Contents 
+*/
 
 .Content-Me{
 	width:100%;
@@ -123,6 +135,7 @@ body{
 	width:50%;
 	margin: 0 auto;
 	text-align: left;
+	padding-bottom:5%;
 }
 
 .Content-Resume{
@@ -141,6 +154,7 @@ body{
 	width:50%;
 	margin: 0 auto;
 	text-align: left;
+	padding-bottom:5%;
 }
 
 .Content-Work{
@@ -158,6 +172,7 @@ body{
 	width:50%;
 	margin: 0 auto;
 	text-align: left;
+	padding-bottom:5%;
 }
 
 .Content-Contact{
@@ -175,5 +190,6 @@ body{
 	width:50%;
 	margin: 0 auto;
 	text-align: left;
+	padding-bottom:5%;
 }
 
