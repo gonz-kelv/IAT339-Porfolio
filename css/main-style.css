@@ -1,0 +1,17 @@
+
+
+body{
+	height:100%;
+	background-color:  #FFF;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: .1em;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	position:relative;
+	z-index: 1;
+}
+
+.Red{
+	color: #8E001C;
+}
