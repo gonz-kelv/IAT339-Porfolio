@@ -12,6 +12,10 @@ body{
 	z-index: 1;
 }
 
+.stylebody{
+	padding-left:5%;
+}
+
 .Red{
 	color: #8E001C;
 }
