@@ -1,0 +1,195 @@
+/*
+  HTML Elements
+*/
+
+html{
+	height:100%;
+}
+
+body{
+	height:100%;
+	background-color:  #FFF;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: .1em;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	position:relative;
+	z-index: 1;
+}
+
+.Navigation{
+	width:100%;
+	display:block;
+	position:absolute;
+	z-index: 3;
+	color:#FFF;
+}
+
+.Content{
+	width:100%;
+	display:block;
+	position:absolute;
+	z-index: 2;
+}
+
+.Color-Bleed{
+	width:100%;
+	height: 100%;
+	background-color:#8E001C;
+	display:block;
+	position:absolute;
+	
+}
+
+/*
+	Styling
+*/
+
+.Red{
+	color: #8E001C;
+}
+
+/* 
+	Navigation 
+*/
+
+#NavButton1{
+	background-color: #8E001C;
+	padding:70px 40px 20px 40px;
+	z-index: 2;
+}
+
+#NavButton2{
+	background-color: #8E001C;
+	padding:30px 20px 30px 50px;
+	z-index: 2;
+}
+
+#NavButton3{
+	background-color: #8E001C;
+	padding:30px 70px 30px 20px;
+	z-index: 2;
+}
+
+#NavButton4{
+	background-color: #8E001C;
+	padding:20px 20px 70px 20px;
+	z-index: 2;
+}
+
+.Nav.Top{
+	width:100%;
+	display:block;
+	margin-top:15%;
+	text-align:center;
+	position:fixed;
+}
+
+.Nav.Left{
+	width:5%;
+	float:left;
+	display:block;
+	margin-top:25%;
+	margin-left:30%;
+	text-align:center;
+	position:fixed;
+}
+
+.Nav.Right{
+	width:5%;
+	float:right;	
+	display:block;
+	margin-top:25%;
+	margin-left:65%;
+	margin-right:30%;
+	text-align:center;
+	position:fixed;
+}
+
+.Nav.Bottom{
+	width:100%;
+	display:block;
+	margin-top:35%;
+	margin-bottom:20%;
+	text-align:center;
+	position:fixed;
+}
+
+/* 
+	Contents 
+*/
+
+.Content-Me{
+	width:100%;
+	margin: 0 auto;
+	padding-top:50%;
+	float:left;
+	display:none;
+	text-align: center;
+	position:absolute;
+
+}
+
+.Me-Details{
+	width:50%;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom:5%;
+}
+
+.Content-Resume{
+	width:100%;
+	margin: 0 auto;
+	margin-top:10%;
+	padding-left:20%;
+	float:right;
+	display:none;
+	text-align: center;
+	position:absolute;
+
+}
+
+.Resume-Details{
+	width:50%;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom:5%;
+}
+
+.Content-Work{
+	width:50%;
+	margin: 0 auto;
+	margin-top:10%;
+	float:left;
+	display:none;
+	text-align: center;
+	position:absolute;
+
+}
+
+.Work-Details{
+	width:50%;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom:5%;
+}
+
+.Content-Contact{
+	width:100%;
+	margin: 0 auto;
+	margin-top:0;
+	float:left;
+	display:none;
+	text-align: center;
+	position:absolute;
+
+}
+
+.Contact-Details{
+	width:50%;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom:5%;
+}
+
