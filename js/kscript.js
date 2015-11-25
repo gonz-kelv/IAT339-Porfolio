@@ -25,6 +25,83 @@ $(document).ready( function() {
 		downContent();
 	});
 	
+	// When user click Game
+	$('.Details-ButtonsA').on('click', function(){
+		// Reset any styles
+		$('.Details-ButtonsB').attr('style','');
+		$('#Details-App').attr('style','');
+		
+		$('.Details-rightA').show().animate({
+			'margin-left':'20%'
+		}, 1250);
+		
+		$('.Details-ButtonsA').show().animate({
+			'width':'10%',
+			'margin-left':'90%',
+			'height': 50
+		},1000).css({
+			'background-color': '#D3CEAA' 
+		});
+		
+		$('#Details-Game').animate({
+			'font-size': '2em'
+		}).css({
+			'color': '#8E001C' 
+		})
+		
+		$('.Details-ButtonsB').show().animate({
+			'width':'10%',
+			'margin-right':'10%',
+			'height': 50
+		},1000);
+		
+		$('#Details-App').animate({
+			'font-size': '2em'
+		})
+		
+		// Revert any changes
+		$('.Details-leftB').hide().attr('style','');
+		
+	});
+	
+	// when user clicks App
+	$('.Details-ButtonsB').on('click', function(){
+		// Reset any style
+		$('.Details-ButtonsA').attr('style','');
+		$('#Details-Game').attr('style','');
+		
+		$('.Details-leftB').show().animate({
+			'margin-left':'30%'
+		},1250);
+		
+		$('.Details-ButtonsA').show().animate({
+			'width':'10%',
+			'margin-left': '10%',
+			'height': 50
+		},1000);
+		
+		$('#Details-Game').animate({
+			'font-size': '2em'
+		});
+		
+		$('.Details-ButtonsB').show().animate({
+			'width':'10%',
+			'margin-right':'90%',
+			'height': 50
+		},1000).css({
+			'background-color': '#D3CEAA' 
+		});
+		
+		$('#Details-App').animate({
+			'font-size': '2em'
+		}).css({
+			'color': '#8E001C' 
+		});
+		
+		$('.Details-rightA').hide().attr('style', '');
+		
+	});
+	
 });
 
 // Add event listener for arrow keys
@@ -70,6 +147,8 @@ function upContent(){
 	$('.Content-Work').hide().attr('style','');
 	$('.Content-Contact').hide().attr('style','');
 	
+	resetWork();
+	
 }
 
 function leftContent(){
@@ -88,6 +167,8 @@ function leftContent(){
 	$('.Content-Work').hide().attr('style','');
 	$('.Content-Contact').hide().attr('style','');
 	
+	resetWork();
+	
 }
 
 function rightContent(){
@@ -99,7 +180,7 @@ function rightContent(){
 	$('#NavButton3').css({'background-color': '#D3CEAA', color: "#8E001C"});
 	
 	$('.Content-Work').show().animate({
-		'width':'100%'
+		'margin-left':'10%'
 	},1000);
 	
 	$('.Content-Me').hide().attr('style','');
@@ -123,6 +204,8 @@ function downContent(){
 	$('.Content-Me').hide().attr('style','');
 	$('.Content-Work').hide().attr('style','');
 	$('.Content-Resume').hide().attr('style','');
+	
+	resetWork();
 	
 }
 
@@ -154,4 +237,8 @@ function navFixPos(){
 	$('#NavButton3').attr('style','');
 	$('#NavButton4').attr('style','');
 	
+}
+
+function resetWork(){
+	$('.Details-Work, .Details-ButtonsB, .Details-leftB, .Details-ButtonsA, .Details-rightA, #Details-Game, #Details-App').attr('style','');
 }

@@ -1,0 +1,21 @@
+
+.Details-ButtonsB
+.Details-leftB
+.Details-ButtonsA
+.Details-rightA
+#Details-Game
+#Details-App
+
+
+
+<h1 class="Red">Work</h1>
+					<h2>First Person Fighting Game</h2>
+						<p>I was the Gameplay Programmer of this project. I created a Hitbox system using Colliders available in Unity. I implemented a simple User interface by having a common health bar located in the top and a red screen flashing on the screen if User gets hit from the enemy</p>
+						<img src="img/f1.png" alt="How the game looks like">
+						<h4>The game in action</h4>
+						
+					<h2>3D Weather App</h2>
+						<p>I was one of the developer in the project. I was in charge of the 3D environment in our weather app.</p>
+						<img src="img/w3.png" alt="Weather app showing my location's weather" width="100%">
+						<p>Using three.js, I created a terrain. This terrain then changes its height to mimic movement like tress in the green terrain area.</p>
+				
