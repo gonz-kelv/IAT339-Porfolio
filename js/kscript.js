@@ -27,38 +27,34 @@ $(document).ready( function() {
 	
 	// When user click Game
 	$('.Details-ButtonsA').on('click', function(){
-		// Reset any styles
-		$('.Details-ButtonsB').attr('style','');
-		$('#Details-App').attr('style','');
 		
 		$('.Details-rightA').show().animate({
 			'margin-left':'20%'
 		}, 1250);
 		
-		$('.Details-ButtonsA').show().animate({
-			'width':'10%',
-			'margin-left':'90%',
-			'height': 50
-		},1000).css({
+		$('.Details-ButtonsA').css({
 			'background-color': '#D3CEAA' 
 		});
 		
-		$('#Details-Game').animate({
-			'font-size': '2em'
-		}).css({
-			'color': '#8E001C' 
-		})
+		$('#Details-Game, #Details-App, #Details-Web').animate({
+			'font-size': '1em'
+		});
 		
-		$('.Details-ButtonsB').show().animate({
-			'width':'10%',
-			'margin-right':'10%',
-			'height': 50
+		$('#Details-Game').css({
+			'color': '#8E001C' 
+		});
+		
+		$('.Details-ButtonsA, .Details-ButtonsB, .Details-ButtonsC').show().animate({
+			'height': '5%'
+		});
+		
+		$('.Details-Buttons').animate({
+			'width':'20%',
+			'margin-left': '80%',
 		},1000);
 		
-		$('#Details-App').animate({
-			'font-size': '2em'
-		})
-		
+		// Reset any styles
+		$('.Details-ButtonsB, #Details-App').attr('style','');
 		// Revert any changes
 		$('.Details-leftB').hide().attr('style','');
 		
@@ -66,40 +62,38 @@ $(document).ready( function() {
 	
 	// when user clicks App
 	$('.Details-ButtonsB').on('click', function(){
-		// Reset any style
-		$('.Details-ButtonsA').attr('style','');
-		$('#Details-Game').attr('style','');
-		
+
 		$('.Details-leftB').show().animate({
 			'margin-left':'30%'
 		},1250);
 		
-		$('.Details-ButtonsA').show().animate({
-			'width':'10%',
-			'margin-left': '10%',
-			'height': 50
-		},1000);
-		
-		$('#Details-Game').animate({
-			'font-size': '2em'
+		$('.Details-ButtonsB, .Details-ButtonsA, .Details-ButtonsC').show().animate({
+			'height': '2%'
 		});
 		
-		$('.Details-ButtonsB').show().animate({
-			'width':'10%',
-			'margin-right':'90%',
-			'height': 50
-		},1000).css({
+		$('#Details-App, #Details-Game, #Details-Web').animate({
+			'font-size': '1em'
+		});
+		
+		$('.Details-ButtonsB').css({
 			'background-color': '#D3CEAA' 
 		});
 		
-		$('#Details-App').animate({
-			'font-size': '2em'
-		}).css({
+		$('#Details-App').css({
 			'color': '#8E001C' 
 		});
 		
 		$('.Details-rightA').hide().attr('style', '');
 		
+		$('.Details-Buttons').animate({
+			'width':'20%',
+			'margin-right': '80%',
+			'margin-left': 0
+		},1000);
+		
+		// Reset any style
+		$('.Details-ButtonsA, #Details-Game').attr('style','');
+				
 	});
 	
 });
@@ -187,6 +181,8 @@ function rightContent(){
 	$('.Content-Resume').hide().attr('style','');
 	$('.Content-Contact').hide().attr('style','');
 	
+	resetWork();
+	
 }
 
 function downContent(){
@@ -240,5 +236,5 @@ function navFixPos(){
 }
 
 function resetWork(){
-	$('.Details-Work, .Details-ButtonsB, .Details-leftB, .Details-ButtonsA, .Details-rightA, #Details-Game, #Details-App').attr('style','');
+	$('.Details-Work, .Details-Buttons, .Details-ButtonsB, .Details-leftB, .Details-ButtonsC, .Details-ButtonsA, .Details-rightA, #Details-Game, #Details-App, #Details-Web').attr('style','');
 }
