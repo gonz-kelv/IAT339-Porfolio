@@ -1,3 +1,373 @@
+Model
+[http://docs.unity3d.com/Manual/BlenderAndRigify.html]
+
+
+<section id="Contact">
+				<div class="Content-Contact">
+					<div class="Contact-Details">
+						<h1 class="Red">Contact</h1>
+						<div class="Contact-Tweet">
+							<img class="Tweet-Icon" src="img/tweet.png" alt="Twitter icon">
+							<h3>@lcelvin</h3>
+						</div>
+						<div class="Contact-Email">
+							<img class="Gmail-Icon" src="img/gmail.png" alt="Gmail icon">
+							<h3>kelv.gonzales@gmail.com</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="Resume">
+				<div class="Content-Resume">
+					<div class="Resume-Details">
+						<h1 class="Red">Resume</h1>
+						<h3>School:</h3>
+						<p>Simon Fraser University Bachelors of Science in Interactive Arts and Technology</p>
+						<h3>Skills:</h3>
+						<p>I have experiences with languages like JavaScript,CSS,HTML,PHP,Java, and C++</p>
+						<p>I have used Sotwares like Unity, Adobe Illustrator, Maya, Adobe Photoshop, and SolidWorks.</p>
+						<h3>Exp:</h3>
+						<p>Student Network Engineer</p>
+						<p>First line of Support. Deploy and install Windows machines. Troubleshoot Windows error and failures. Maintain backup operations.</p>
+					</div>
+				</div>
+			</section>
+
+
+
+// Old CSS
+
+/*
+  HTML Elements
+*/
+
+html{
+	width:100%;
+	height:100%;
+}
+
+body{
+	width:100%;
+	height:100%;
+	background-color:  #FFF;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: .1em;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	position:relative;
+	z-index: 1;
+}
+
+.Navigation{
+	width:100%;
+	display:block;
+	position:absolute;
+	z-index: 3;
+	color:#FFF;
+	font-size:1.5em;
+}
+
+.Content{
+	width:100%;
+	display:block;
+	position:absolute;
+	z-index: 2;
+}
+
+.Color-Bleed{
+	width:100%;
+	height: 100%;
+	background-color:#8E001C;
+	display:block;
+	position:absolute;
+	
+}
+
+/*
+	Styling
+*/
+
+.Red{
+	color: #8E001C;
+}
+
+/* 
+	Navigation 
+*/
+
+#NavButton1{
+	background-color: #8E001C;
+	padding:70px 40px 20px 40px;
+	z-index: 2;
+}
+
+#NavButton2{
+	background-color: #8E001C;
+	padding:30px 20px 30px 50px;
+	z-index: 2;
+}
+
+#NavButton3{
+	background-color: #8E001C;
+	padding:30px 70px 30px 20px;
+	z-index: 2;
+}
+
+#NavButton4{
+	background-color: #8E001C;
+	padding:20px 20px 70px 20px;
+	z-index: 2;
+}
+
+.Nav.Top{
+	width:100%;
+	display:block;
+	margin-top:15%;
+	text-align:center;
+	position:fixed;
+}
+
+.Nav.Left{
+	width:5%;
+	float:left;
+	display:block;
+	margin-top:25%;
+	margin-left:30%;
+	text-align:center;
+	position:fixed;
+}
+
+.Nav.Right{
+	width:5%;
+	float:right;	
+	display:block;
+	margin-top:25%;
+	margin-left:65%;
+	margin-right:30%;
+	text-align:center;
+	position:fixed;
+}
+
+.Nav.Bottom{
+	width:100%;
+	display:block;
+	margin-top:35%;
+	margin-bottom:20%;
+	text-align:center;
+	position:fixed;
+}
+
+/* 
+	Contents 
+*/
+
+.Content-Me{
+	width:100%;
+	margin: 0 auto;
+	padding-top:50%;
+	float:left;
+	display:none;
+	text-align: center;
+	position:absolute;
+
+}
+
+.Me-Details{
+	width:50%;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom:5%;
+}
+
+.Content-Resume{
+	width:100%;
+	margin: 0 auto;
+	margin-top:10%;
+	padding-left:20%;
+	float:right;
+	display:none;
+	text-align: center;
+	position:absolute;
+
+}
+
+.Resume-Details{
+	width:50%;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom:5%;
+}
+
+.Content-Work{
+	width:80%;
+	margin: 0 auto;
+	margin-top:10%;
+	float:left;
+	display:none;
+	text-align: center;
+	position:absolute;
+
+}
+
+.Work-Details{
+	width:100%;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom:5%;
+}
+
+.Content-Contact{
+	width:100%;
+	margin: 0 auto;
+	margin-top:0;
+	float:left;
+	display:none;
+	text-align: center;
+	position:absolute;
+
+}
+
+.Contact-Details{
+	width:50%;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom:5%;
+}
+
+.Details-Buttons{
+	width:100%;
+	display:block;
+}
+
+.Details-ButtonsA{
+	width:25%;
+	padding:2%;
+	margin-left:60%;
+	float:left;
+	position:relative;
+	display:block;
+	background-color:#8E001C;
+}
+
+.Details-ButtonsB{
+	width:25%;
+	padding:2%;
+	margin-right:60%;
+	float:right;
+	position:relative;
+	display:block;
+	background-color:#8E001C;
+}
+
+.Details-ButtonsC{
+	width:25%;
+	padding:2%;
+	margin-left:50%;
+	float:left;
+	position:relative;
+	display:block;
+	background-color:#8E001C;
+}
+
+.Contact-Tweet{
+	display:inline-block;
+	width:25%;
+	text-align: center;
+}
+
+.Tweet-Icon{
+	display:inline-block;
+}
+
+.Tweet-Icon{
+	width:50px;
+	height:50px;
+}
+
+.Contact-Email{
+	display:inline-block;
+	width:25%;
+	text-align:center;
+}
+
+.Gmail-Icon{
+	width:50px;
+	height:50px;
+}
+
+.Details-rightA{
+	position:absolute;
+	width:50%;
+	margin-right:80%;
+	padding-bottom:10%;
+	display:none;
+}
+
+.Details-leftB{
+	position:absolute;
+	width:50%;
+	margin-left:75%;
+	padding-bottom:10%;
+	display:none;
+}
+
+.Rbkground{
+	width:100%;
+	height:25%;
+	display:block;
+	background-color:#8E001C;
+}
+
+#Details-Game{
+	display:block;
+	text-align:center;
+	font-size: 4em;
+	color:#FFF;
+}
+
+#Details-App{
+	display:block;
+	text-align:center;
+	font-size: 4em;
+	color:#FFF;
+}
+
+#Details-Web{
+	display:block;
+	text-align:center;
+	font-size: 4em;
+	color:#FFF;
+}
+
+.Details-info{
+	width:80%;
+	display:block;
+	position:relative;
+}
+
+.Details-bodyA{
+	width:75%;
+	display:block;
+}
+
+.Details-imgA{
+	margin-left:25%;
+}
+
+.Details-bodyB{
+	margin-left:50%;
+	text-align:right;
+	width:50%;
+	display:block;
+}
+
+.Details-imgB{
+	width:75%;
+	margin-left:25%;
+}
+
+// Old CSS
 
 .Details-ButtonsB
 .Details-leftB
