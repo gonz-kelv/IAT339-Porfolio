@@ -44,6 +44,52 @@ body{
 	position:absolute;
 }
 
+.Corner1{
+	width:25%;
+	height:25%;
+	/*background-color: grey;*/
+	float:left;
+	display:block;
+	position:absolute;
+	z-index:3;
+}
+
+.Corner2{
+	width:25%;
+	height:25%;
+	/*background-color: grey;*/
+	top:0;
+	right:0;
+	float:left;
+	display:block;
+	position:absolute;
+	z-index:3;
+}
+
+.Corner3{
+	width:25%;
+	height:25%;
+	/*background-color: grey;*/
+	left:0;
+	bottom:0;
+	float:left;
+	display:block;
+	position:absolute;
+	z-index:3;
+}
+
+.Corner4{
+	width:25%;
+	height:25%;
+	/*background-color: grey;*/
+	float:left;
+	display:block;
+	bottom:0;
+	right:0;
+	position:absolute;
+	z-index:3;
+}
+
 /*
 	Styling
 */
