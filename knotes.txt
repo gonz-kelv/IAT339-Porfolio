@@ -2,6 +2,8 @@ Model
 [http://docs.unity3d.com/Manual/BlenderAndRigify.html]
 
 
+<img class="icon" src="img/controllerIcon.png" >
+
 <section id="Contact">
 				<div class="Content-Contact">
 					<div class="Contact-Details">
