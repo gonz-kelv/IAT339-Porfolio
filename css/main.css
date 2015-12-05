@@ -10,6 +10,7 @@ html{
 body{
 	width:100%;
 	height:100%;
+	display:block;
 	background-color:  #FFF;
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: .1em;
@@ -50,7 +51,7 @@ body{
 	/*background-color: grey;*/
 	float:left;
 	display:block;
-	position:absolute;
+	position:fixed;
 	z-index:3;
 }
 
@@ -62,7 +63,7 @@ body{
 	right:0;
 	float:left;
 	display:block;
-	position:absolute;
+	position:fixed;
 	z-index:3;
 }
 
@@ -74,7 +75,7 @@ body{
 	bottom:0;
 	float:left;
 	display:block;
-	position:absolute;
+	position:fixed;
 	z-index:3;
 }
 
@@ -86,7 +87,7 @@ body{
 	display:block;
 	bottom:0;
 	right:0;
-	position:absolute;
+	position:fixed;
 	z-index:3;
 }
 
@@ -112,27 +113,43 @@ section{
 */
 
 #NavButton1{
-	background-color: #8E001C;
-	padding:70px 40px 20px 40px;
+	/*background-color: #8E001C;*/
+	background-image: url("../img/controllerIcon.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding:70px 40px 50px 40px;
 	z-index: 2;
 }
 
 #NavButton2{
-	background-color: #8E001C;
-	padding:30px 20px 30px 50px;
+	background-image: url("../img/controllerIcon2.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding:30px 50px 30px 50px;
 	z-index: 2;
 }
 
 #NavButton3{
-	background-color: #8E001C;
-	padding:30px 70px 30px 20px;
+	background-image: url("../img/controllerIcon3.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding:30px 70px 30px 60px;
 	z-index: 2;
 }
 
 #NavButton4{
-	background-color: #8E001C;
-	padding:20px 20px 70px 20px;
+	background-image: url("../img/controllerIcon4.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding:50px 20px 70px 20px;
 	z-index: 2;
+}
+
+.icon{
+	position:absolute;
+	width:110px;
+	height:100px;
+	z-index:-1;
 }
 
 .Nav.Top{
@@ -160,7 +177,7 @@ section{
 	display:block;
 	margin-top:25%;
 	margin-left:65%;
-	margin-right:2%;
+	margin-right:5%;
 	text-align:center;
 	position:fixed;
 	right:0;
@@ -187,6 +204,7 @@ section{
 	float:left;
 	display:block;
 	text-align: center;
+	/*background-color: grey;*/
 
 }
 
@@ -205,6 +223,7 @@ section{
 	float:left;
 	display:block;
 	text-align: center;
+	/*background-color: grey;*/
 }
 
 .Work-Details{
@@ -239,7 +258,7 @@ section{
 	float:left;
 	display:block;
 	text-align:center;
-	font-size: 4em;
+	font-size: 3em;
 	color:#FFF;
 }
 
@@ -247,7 +266,7 @@ section{
 	float:left;
 	display:block;
 	text-align:center;
-	font-size: 4em;
+	font-size:3em;
 	color:#FFF;
 }
 
@@ -255,36 +274,46 @@ section{
 	float:left;
 	display:block;
 	text-align:center;
-	font-size: 4em;
+	font-size: 3em;
 	color:#FFF;
 }
 
 
 .Details-ButtonsA{
-	width:25%;
+	width:15%;
 	padding:2%;
-	margin-left:60%;
-	float:left;
-	display:block;
-	background-color:#8E001C;
-}
-
-.Details-ButtonsB{
-	width:25%;
-	padding:2%;
-	margin-right:60%;
-	float:right;
-	display:block;
-	background-color:#8E001C;
-}
-
-.Details-ButtonsC{
-	width:25%;
-	padding:2%;
+	padding-left:5%;
 	margin-left:50%;
 	float:left;
 	display:block;
-	background-color:#8E001C;
+	/*background-color:#8E001C;*/
+	background-image: url("../img/controllerIcon3.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.Details-ButtonsB{
+	width:15%;
+	padding:2%;
+	padding-left:5%;
+	margin-right:50%;
+	float:right;
+	display:block;
+	background-image: url("../img/controllerIcon2.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.Details-ButtonsC{
+	width:15%;
+	padding:2%;
+	padding-left:5%;
+	margin-left:50%;
+	float:left;
+	display:block;
+	background-image: url("../img/controllerIcon3.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .Details-bodyA{
@@ -320,10 +349,11 @@ section{
 	float:left;
 	display:block;
 	text-align: center;
+	/*background-color: grey;*/
 }
 
 .Contact-Details{
-	width:80%;
+	width:100%;
 	margin: 0 auto;
 	text-align: left;
 	padding-top:15%;
@@ -426,7 +456,7 @@ section{
 	float:left;
 	display:block;
 	text-align: center;
-
+	/*background-color: grey;*/
 }
 
 .Resume-Details{
@@ -437,3 +467,17 @@ section{
 	padding-bottom:5%;
 }
 
+@media(max-width: 1400px){
+	.Nav.Right{
+		margin-right:10%;
+	}
+	
+}
+
+@media(max-width: 800px){
+	.Nav.Right{
+		margin-right:30%;
+	}
+	
+	
+}
